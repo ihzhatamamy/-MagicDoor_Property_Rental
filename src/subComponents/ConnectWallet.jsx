@@ -55,14 +55,18 @@ function ConnectWalletButton() {
             <p>{account.substring(0, 12)}...</p>
             <p>{balance} ETH</p>
           </button> */}
+          <a href="#" className="dropdown-trigger connect-wallet">
+            Connected
+          </a>
+          <ul className="dropdown-menu">
+            <li>{account.substring(0, 12)}...</li>
+            <li>{balance} ETH</li>
             <li>
-                <a href="#" className="dropdown-trigger connect-wallet">Connected</a>
-                <ul className="dropdown-menu">
-                    <li>{account.substring(0, 12)}...</li>
-                    <li>{balance} ETH</li>
-                    <li><button onClick={disconnectWallet} className="connect-wallet">Disconnect</button></li>
-                </ul>
+              <button onClick={disconnectWallet} className="connect-wallet">
+                Disconnect
+              </button>
             </li>
+          </ul>
         </>
       )}
     </>
