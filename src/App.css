@@ -207,6 +207,8 @@ h5 {
   .show {
     height: fit-content;
     transition: 0.3s;
+    z-index: 99;
+    background-color: #111;
   }
   .show ul {
     display: flex;
@@ -262,8 +264,8 @@ h5 {
   justify-content: center;
   align-items: center;
   padding: 75px 20px;
-  max-width: 1500px;
-  min-width: 1500px;
+  max-width: 100%;
+  min-width: 100%;
 }
 #topVillas p {
   max-width: 1280px;
@@ -489,8 +491,8 @@ h5 {
 /*********************************OUR SPECIALITIES STYLING*****************************************************/
 #ourSpecialities {
   padding: 100px 20px;
-  max-width: 1500px;
-  min-width: 1500px;
+  max-width: 100%;
+  min-width: 100%;
 }
 #ourSpecialities h1 {
   margin-bottom: 60px;
@@ -522,7 +524,7 @@ h5 {
   border-left: 1px solid gray;
   padding-left: 12px;
 }
-@media (max-width: 1500px) {
+@media (max-width: 100%) {
   #ourSpecialities {
     min-width: 100%;
   }
@@ -607,8 +609,8 @@ h5 {
 
 /****************************************ABOUT US MINI STYLING*************************************************/
 #aboutUs_Mini {
-  min-width: 1500px;
-  max-width: 1500px;
+  min-width: 100%;
+  max-width: 100%;
   padding: 75px 20px;
   display: flex;
 }
@@ -764,8 +766,8 @@ h5 {
 }
 #contact_Mini .super_container {
   display: flex;
-  max-width: 1500px;
-  min-width: 1500px;
+  max-width: 100%;
+  min-width: 100%;
   gap: 40px;
   transform: translateY(240px);
   position: absolute;
@@ -947,6 +949,7 @@ h5 {
   text-align: start;
 }
 .otherPage_footer .container:first-child ul {
+  list-style: none;
   margin-top: 25px;
   display: flex;
   gap: 12px;
@@ -971,6 +974,9 @@ h5 {
   }
 }
 @media (max-width: 850px) {
+  .homePage_footer {
+    padding: 600px 20px 20px 20px;
+  }
   .otherPage_footer {
     flex-direction: column;
     gap: 25px;
@@ -986,6 +992,7 @@ h5 {
   }
   .otherPage_footer .container:first-child ul {
     margin: 0 auto;
+    list-style: none;
   }
 }
 @media (max-width: 710px) {
@@ -1013,7 +1020,7 @@ h5 {
 }
 #allVillas .villasContainer {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 100%;
 }
 
 /**********************SINGLE VILLA PAGE STYLING ***************************************/
@@ -1023,8 +1030,8 @@ h5 {
   background: linear-gradient(176deg, #6868688c, transparent);
 }
 #singleVilla .container {
-  max-width: 1500px;
-  min-width: 1500px;
+  max-width: 100%;
+  min-width: 100%;
   margin: 0 auto;
 }
 #singleVilla .container h3 {
@@ -1099,12 +1106,13 @@ h5 {
 }
 #aboutPage .container {
   margin: 0 auto;
-  max-width: 1500px;
-  min-width: 1500px;
-  display: flex;
+  /* max-width: 100%;
+  min-width: 100%; */
+  /* display: flex; */
   gap: 25px;
 }
 #aboutPage .container img {
+  width: 100%;
   flex: 1;
   height: auto;
   border-bottom-right-radius: 60px;
@@ -1150,17 +1158,18 @@ h5 {
   background: linear-gradient(176deg, #6868688c, transparent);
 }
 #contact .container {
-  display: flex;
+  /* display: flex; */
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
-  max-width: 1500px;
-  min-width: 1500px;
+  max-width: 100%;
+  min-width: 100%;
   background: #fff;
   margin-top: 60px;
 }
 #contact .container img {
   height: auto;
   flex: 4;
+  width: 100%;
 }
 #contact .container .content {
   display: flex;
@@ -1207,8 +1216,8 @@ h5 {
 /*****************TERMS AND CONDITIONS PAGE STYLING**********************************/
 #termsandcond {
   padding: 150px 20px 30px 20px;
-  min-width: 1500px;
-  max-width: 1500px;
+  min-width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 #termsandcond header {
